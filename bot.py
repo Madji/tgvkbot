@@ -654,7 +654,7 @@ def reply_text(message):
                 bot.send_message(message.from_user.id,
                                  'Вход выполнен в аккаунт {} {}!'.format(user['first_name'], user['last_name'])).wait()
 
-                bot.send_message(message.from_user.id, '[Использование](https://biodamage.ru/tgvkbot/usage/)',
+                bot.send_message(message.from_user.id, '[Использование](https://biodamage.ru/tgvkbot/)',
                                  parse_mode='Markdown').wait()
             except:
                 bot.send_message(message.from_user.id, 'Неверная ссылка, попробуй ещё раз!').wait()
